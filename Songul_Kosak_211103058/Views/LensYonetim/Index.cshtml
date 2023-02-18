@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Songul_Kosak_211103058.DAL.Lens>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LensResimYolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LensÜstYazi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResimSira)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="@item.LensResimYolu" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LensÜstYazi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResimSira)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.LensId }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.LensId }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

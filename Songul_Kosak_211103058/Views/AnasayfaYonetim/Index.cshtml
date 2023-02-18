@@ -1,0 +1,80 @@
+﻿
+@model IEnumerable<Songul_Kosak_211103058.DAL.Anasayfa>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UstResimYolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrtaBaslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AraResim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BizKimizYazisi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BizKimizBaslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ButonYazi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AltResimYolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AltResimBaslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AltResimYazi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="@item.UstResimYolu" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrtaBaslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AraResim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BizKimizYazisi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BizKimizBaslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ButonYazi)
+        </td>
+        <td>
+            <img src="@item.AltResimYolu" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AltResimBaslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AltResimYazi)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.AnasayfaId }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.AnasayfaId }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

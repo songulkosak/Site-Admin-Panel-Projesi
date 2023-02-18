@@ -1,0 +1,158 @@
+﻿@model Songul_Kosak_211103058.DAL.Anasayfa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<main id="site-content" class="site-content" role="main">
+
+
+    <article class="post-17 page type-page status-publish hentry" id="post-17">
+
+
+        <div class="content-area__wrapper">
+            <div class="content-area entry-content">
+
+                <div class="is-layout-flex wp-container-7 wp-block-columns">
+                    <div class="is-layout-flow wp-block-column" style="flex-basis:100%">
+                        <div class="is-layout-flow wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <div class="is-layout-flex wp-container-4 wp-block-columns">
+                                    <div class="is-layout-flow wp-block-column" style="flex-basis:100%">
+                                        <figure class="is-layout-flex wp-block-gallery-1 wp-block-gallery aligncenter has-nested-images columns-5 is-cropped coblocks-animate" data-coblocks-animation="clipHorizontal">
+                                            <figure class="wp-block-image size-large is-style-rounded"><img decoding="async" width="1024" height="761" src="/Content/Ekran-Resmi-2022-01-10-09.57.05-1024x761.png" alt="" class="wp-image-381" srcset="/Content/Ekran-Resmi-2022-01-10-09.57.05-1024x761.png 1024w, /Content/Ekran-Resmi-2022-01-10-09.57.05-300x223.png 300w, /Content/Ekran-Resmi-2022-01-10-09.57.05-768x571.png 768w, /Content/Ekran-Resmi-2022-01-10-09.57.05-1536x1141.png 1536w, /Content/Ekran-Resmi-2022-01-10-09.57.05.png 1752w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+                                            <figure class="wp-block-image size-full is-style-rounded"><img decoding="async" loading="lazy" width="411" height="363" src="/Content/kucuk2.png" alt="" class="wp-image-325" srcset="/Content/kucuk2.png 411w, /Content/kucuk2-300x265.png 300w" sizes="(max-width: 411px) 100vw, 411px" /></figure>
+
+
+
+                                            <figure class="wp-block-image size-full is-style-rounded"><img decoding="async" loading="lazy" width="774" height="528" src="/Content/Ekran-Resmi-2022-01-10-09.57.22.png" alt="" class="wp-image-383" srcset="/Content/Ekran-Resmi-2022-01-10-09.57.22.png 774w, /Content/Ekran-Resmi-2022-01-10-09.57.22-300x205.png 300w, /Content/Ekran-Resmi-2022-01-10-09.57.22-768x524.png 768w" sizes="(max-width: 774px) 100vw, 774px" /></figure>
+
+
+
+                                            <figure class="wp-block-image size-full is-style-rounded"><img decoding="async" loading="lazy" width="305" height="228" src="/Content/Ekran-Resmi-2021-02-10-11.04.40.png" alt="" class="wp-image-97" srcset="/Content/Ekran-Resmi-2021-02-10-11.04.40.png 305w, /Content/Ekran-Resmi-2021-02-10-11.04.40-300x224.png 300w" sizes="(max-width: 305px) 100vw, 305px" /></figure>
+
+
+
+                                            <figure class="wp-block-image size-full is-style-rounded"><img decoding="async" loading="lazy" width="290" height="306" src="/Content/Ekran-Resmi-2021-02-10-11.04.19.png" alt="" class="wp-image-96" srcset="/Content/Ekran-Resmi-2021-02-10-11.04.19.png 290w, /Content/Ekran-Resmi-2021-02-10-11.04.19-284x300.png 284w" sizes="(max-width: 290px) 100vw, 290px" /></figure>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h2 class="has-text-align-center">@Model.OrtaBaslik</h2>
+
+
+
+                <div class="wp-block-button aligncenter"><a class="wp-block-button__link wp-element-button" href=@Url.Action("Markalarimiz","Home")>@Model.ButonYazi</a></div>
+
+                <figure class="wp-block-image alignwide size-full"><img decoding="async" loading="lazy" width="2708" height="514" src=@Model.AraResim sizes="(max-width: 2708px) 100vw, 2708px" /></figure>
+
+
+                @*<figure class="wp-block-image alignwide size-full"><img decoding="async" loading="lazy" width="2708" height="514" src="/Content/Ekran-Resmi-2023-01-06-18.03.15.png" alt="" class="wp-image-424" srcset="/Content/Ekran-Resmi-2023-01-06-18.03.15.png 2708w, /Content/Ekran-Resmi-2023-01-06-18.03.15-300x57.png 300w, /Content/Ekran-Resmi-2023-01-06-18.03.15-1024x194.png 1024w, /Content/Ekran-Resmi-2023-01-06-18.03.15-768x146.png 768w, /Content/Ekran-Resmi-2023-01-06-18.03.15-1536x292.png 1536w, /Content/Ekran-Resmi-2023-01-06-18.03.15-2048x389.png 2048w" sizes="(max-width: 2708px) 100vw, 2708px" /></figure>*@
+
+
+                <div class="wp-block-coblocks-services alignwide is-style-square">
+                    <div class="is-style-square has-columns has-3-columns has-responsive-columns has-large-gutter">
+
+
+                        <div class="wp-block-coblocks-service">
+                            <figure class="wp-block-coblocks-service__figure"><img decoding="async" src=@Model.AltResimYolu alt="" /></figure>
+                            <div class="wp-block-coblocks-service__content">
+                                <h3 class="has-text-align-center">@Model.AltResimBaslik</h3>
+
+
+                                <p class="has-text-align-center">@Model.AltResimYazi &#8230;</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="wp-block-coblocks-service">
+                                <figure class="wp-block-coblocks-service__figure"><img decoding="async" src="/Content/Ekran-Resmi-2023-01-06-18.03.43.png" alt="" style="object-position:57.99999999999999% 31%" /></figure><div class="wp-block-coblocks-service__content">
+                                    <h3 class="has-text-align-center">Optik Gözlük</h3>
+
+
+
+                                    <p class="has-text-align-center">Ürün yelpazemizi binlerce farklı modelle sürekli olarak yeniliyoruz bu sayede Aytuğ Optik olarak müşterilerimize dünyanın en trend marka ve modellerini her zaman en güncel şekilde sunma fırsatı yakalıyoruz.</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wp-block-coblocks-service">
+                                <figure class="wp-block-coblocks-service__figure"><img decoding="async" src="/Content/lensse.jpg" alt="" /></figure><div class="wp-block-coblocks-service__content">
+                                    <h3 class="has-text-align-center mb-0 pb-0">Lens ve Solüsyon</h3>
+
+
+
+                                    <p class="has-text-align-center">Bausch+Lomb , Alcon , CooperVision , Johnson&amp;Johnson gibi popüler lens markalarının ürünlerini her zaman stoklarımızda bulabilirsiniz.</p>
+                                </div>
+                            </div>
+
+
+
+                        <div class="wp-block-coblocks-service">
+                            <div class="wp-block-coblocks-service__content">
+                                <h3 class="has-text-align-none"></h3>
+
+
+
+                                <p class="has-text-align-none"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="wp-block-coblocks-shape-divider alignfull is-style-angled has-tertiary-color is-horizontally-flipped mb-0" style="" aria-hidden="true">
+                    <div class="wp-block-coblocks-shape-divider__svg-wrapper" style="height:70px;">
+                        <svg class="divider--angled" aria-hidden xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" /></svg>
+                    </div>
+                    <div class="wp-block-coblocks-shape-divider__alt-wrapper" style="height:20px;"></div>
+                </div>
+
+
+                <div class="is-layout-flow wp-block-group alignfull has-tertiary-background-color has-background mb-0 mt-0">
+                    <div class="wp-block-group__inner-container">
+                        <p style="font-size:16px"><strong>@Model.BizKimizBaslik</strong></p>
+
+
+
+                        @*<p>1994 yılında<strong> Recai KAŞKIR </strong>tarafından kurulan <strong>AYTUĞ OPTİK</strong>, sektörün getirdiği tüm yenilikleri takip ederek siz müşterilerimize en iyi şekilde hizmet vermeye devam etmektedir.</p>
+
+
+
+                            <p>Uzman kadrosu, deneyimli personeli ve 27 yılı aşkın tecrübesiyle sektörde lider konumundadır.</p>
+
+
+
+                            <p>Dünyanın en gözde markalarını müşterilerine en iyi şekilde sunan mağazamız en yeni teknoloji makine parkuru, sürekli güncellenen marka ve modelleriyle günümüz trendini yakından takip etmektedir.</p>*@
+
+
+
+                        <p>@Model.BizKimizYazisi</p>
+                    </div>
+                </div>
+
+
+                <div class="wp-block-coblocks-shape-divider alignfull is-style-angled has-tertiary-color is-vertically-flipped mt-0 mb-0" style="" aria-hidden="true">
+                    <div class="wp-block-coblocks-shape-divider__svg-wrapper" style="height:69px;">
+                        <svg class="divider--angled" aria-hidden xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" /></svg>
+                    </div>
+                    <div class="wp-block-coblocks-shape-divider__alt-wrapper" style="height:20px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+</main>
+

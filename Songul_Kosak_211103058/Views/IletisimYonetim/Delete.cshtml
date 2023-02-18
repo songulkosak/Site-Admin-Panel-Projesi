@@ -1,0 +1,89 @@
+﻿@model Songul_Kosak_211103058.DAL.Iletisim
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Sil</h2>
+
+<h3>Silmek istediğine emin misin?</h3>
+<div>
+    <h4>Iletisim</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BaslikBilgi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BaslikBilgi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BizeUlasinYazisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BizeUlasinYazisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresSatir1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresSatir1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresSatir2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresSatir2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdresSatir3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresSatir3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Geri Dön", "Index")
+        </div>
+    }
+</div>

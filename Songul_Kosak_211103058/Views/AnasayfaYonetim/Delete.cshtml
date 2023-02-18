@@ -1,0 +1,97 @@
+﻿@model Songul_Kosak_211103058.DAL.Anasayfa
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Sil</h2>
+
+<h3>Silmek istediğine emin misin</h3>
+<div>
+    <h4>Anasayfa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UstResimYolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UstResimYolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrtaBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrtaBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AraResim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AraResim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BizKimizYazisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BizKimizYazisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BizKimizBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BizKimizBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ButonYazi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ButonYazi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimYolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimYolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimYazi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimYazi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Geri Dön", "Index")
+        </div>
+    }
+</div>

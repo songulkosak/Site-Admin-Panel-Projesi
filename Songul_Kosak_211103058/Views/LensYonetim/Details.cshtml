@@ -1,0 +1,43 @@
+﻿@model Songul_Kosak_211103058.DAL.Lens
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lens</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LensResimYolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LensResimYolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LensÜstYazi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LensÜstYazi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResimSira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResimSira)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LensId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

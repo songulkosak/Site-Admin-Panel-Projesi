@@ -1,0 +1,91 @@
+﻿@model Songul_Kosak_211103058.DAL.Anasayfa
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Anasayfa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UstResimYolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UstResimYolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrtaBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrtaBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AraResim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AraResim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BizKimizYazisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BizKimizYazisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BizKimizBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BizKimizBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ButonYazi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ButonYazi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimYolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimYolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AltResimYazi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AltResimYazi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AnasayfaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
